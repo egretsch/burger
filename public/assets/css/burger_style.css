@@ -1,0 +1,30 @@
+.text {
+    font-family: 'Monoton', cursive;
+    color: rgb(46, 4, 235);
+}
+.text2 {
+    font-family: 'Stalinist One', cursive;
+    color: rgb(46, 4, 235);
+}
+
+button {
+    background-color: aquamarine;
+    border: solid 3px red;
+    margin: 5px;
+    color: rgb(46, 4, 235);
+}
+
+
+body {
+    background-color: tan;
+}
+
+.text3 {
+    font-family: 'Bungee Inline', cursive;
+    color: rgb(46, 4, 235);
+    border: solid 3px red;
+}
+
+.moveDown {
+    margin-top: 5%;
+}
