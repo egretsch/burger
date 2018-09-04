@@ -5,7 +5,7 @@ var router = express.Router();
 // Import the model (cat.js) to use its database functions.
 var burger = require("../models/burger.js");
 
-// Create all our routes and set up logic within those routes where required.
+// Provides they get route to receive the main data to be present on the main page as well as the route for the main page
 router.get("/", function(req, res) {
   burger.selectAll(function(data) {
     var hbsObject = {
@@ -15,7 +15,7 @@ router.get("/", function(req, res) {
     res.render("index", hbsObject);
   });
 });
-
+// Allows us to post a new burger into the database
 router.post("/api/burgers", function(req, res) {
   burger.insertOne([
     "burger_name"
@@ -27,6 +27,7 @@ router.post("/api/burgers", function(req, res) {
   });
 });
 
+// Allows us to change the burger from true to false
 router.put("/api/burgers/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
